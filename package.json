@@ -17,6 +17,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "@types/meteor": "^1.4.70",
     "@types/mocha": "^8.2.2",
     "@types/react": "^17.0.3",
@@ -32,7 +33,27 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "markdown-cli": "^1.6.0",
+    "postcss": "^8.3.8",
+    "postcss-import": "^14.0.2",
+    "postcss-load-config": "^3.1.0",
+    "tailwindcss": "^2.2.16",
     "typescript": "^4.2.4"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": {
+    "developent": [
+      "last 1 version"
+    ],
+    "production": [
+      "> 1%",
+      "ie 10"
+    ]
   },
   "meteor": {
     "mainModule": {
